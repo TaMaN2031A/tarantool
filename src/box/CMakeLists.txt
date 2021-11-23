@@ -173,6 +173,7 @@ set(box_sources
     session.cc
     port.c
     txn.c
+    tx_memory.c
     txn_limbo.c
     raft.c
     box.cc
