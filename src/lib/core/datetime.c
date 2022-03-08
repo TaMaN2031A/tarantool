@@ -390,7 +390,7 @@ interval_to_string(const struct datetime_interval *ival, char *buf, ssize_t len)
 			return sz;
 		} else {
 			SNPRINT(sz, snprintf, buf, len, zero_secs);
-			return sizeof(zero_secs);
+			return sizeof(zero_secs) - 1;
 		}
 	}
 	long abs_s = labs(secs);
